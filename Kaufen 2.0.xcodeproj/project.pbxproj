@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2437B41E51442E00BE1577 /* getDataFromReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2437B31E51442E00BE1577 /* getDataFromReceipt.swift */; };
 		AE833C571E4FDFE300E201F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE833C561E4FDFE300E201F8 /* AppDelegate.swift */; };
 		AE833C591E4FDFE300E201F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE833C581E4FDFE300E201F8 /* ViewController.swift */; };
 		AE833C5C1E4FDFE300E201F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE833C5A1E4FDFE300E201F8 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		6D87FD6C4A4C472F6BCEBF2C /* Pods_Kaufen_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kaufen_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6D9FC8FDE1AF25CA001612 /* Pods-Kaufen 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kaufen 2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kaufen 2.0/Pods-Kaufen 2.0.release.xcconfig"; sourceTree = "<group>"; };
+		AE2437B31E51442E00BE1577 /* getDataFromReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getDataFromReceipt.swift; sourceTree = "<group>"; };
 		AE833C531E4FDFE300E201F8 /* Kaufen 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaufen 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE833C561E4FDFE300E201F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE833C581E4FDFE300E201F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				AE833C561E4FDFE300E201F8 /* AppDelegate.swift */,
 				AE833C581E4FDFE300E201F8 /* ViewController.swift */,
+				AE2437B31E51442E00BE1577 /* getDataFromReceipt.swift */,
 				AE833C5A1E4FDFE300E201F8 /* Main.storyboard */,
 				AE833C601E4FDFE300E201F8 /* Assets.xcassets */,
 				AE833C621E4FDFE300E201F8 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE833C5F1E4FDFE300E201F8 /* Kaufen_2_0.xcdatamodeld in Sources */,
+				AE2437B41E51442E00BE1577 /* getDataFromReceipt.swift in Sources */,
 				AE833C591E4FDFE300E201F8 /* ViewController.swift in Sources */,
 				AE833C571E4FDFE300E201F8 /* AppDelegate.swift in Sources */,
 			);

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +26,7 @@
                     <navigationItem key="navigationItem" title="Purchase history" id="TSB-GF-0l7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pax-WO-aaM">
                             <connections>
-                                <segue destination="nYS-2u-pAi" kind="show" id="X3G-xu-q1W"/>
+                                <segue destination="uZ9-2L-9QI" kind="presentation" identifier="AddData" id="X3G-xu-q1W"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -34,10 +35,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="136.28185907046478"/>
         </scene>
-        <!--View Controller-->
+        <!--Receipt-->
         <scene sceneID="5sR-D3-i4Y">
             <objects>
-                <viewController id="nYS-2u-pAi" sceneMemberID="viewController">
+                <viewController id="nYS-2u-pAi" customClass="getDataFromReceipt" customModule="Kaufen_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fSY-4O-wRc"/>
                         <viewControllerLayoutGuide type="bottom" id="6up-eA-pRQ"/>
@@ -45,12 +46,51 @@
                     <view key="view" contentMode="scaleToFill" id="oVY-Sf-Qhk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="snj-a8-lze">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="maI-Ak-asn" userLabel="Image View to store receipt's image">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="565"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="FiW-CR-CAs" userLabel="Buttons">
+                                        <rect key="frame" x="0.0" y="573" width="343" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-pW-7gu">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
+                                                <state key="normal" title="Access Photo Library"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZf-jp-7Vb">
+                                                <rect key="frame" x="176" y="0.0" width="167" height="30"/>
+                                                <state key="normal" title="Use Camera"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="maI-Ak-asn" secondAttribute="trailing" id="50y-kI-L2t"/>
+                                    <constraint firstItem="maI-Ak-asn" firstAttribute="leading" secondItem="snj-a8-lze" secondAttribute="leading" id="XUP-HB-fjh"/>
+                                    <constraint firstAttribute="trailing" secondItem="FiW-CR-CAs" secondAttribute="trailing" id="oqt-0N-41Z"/>
+                                    <constraint firstItem="FiW-CR-CAs" firstAttribute="leading" secondItem="snj-a8-lze" secondAttribute="leading" id="qST-6v-8a8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6up-eA-pRQ" firstAttribute="top" secondItem="snj-a8-lze" secondAttribute="bottom" id="IFf-2u-PJZ"/>
+                            <constraint firstItem="snj-a8-lze" firstAttribute="top" secondItem="fSY-4O-wRc" secondAttribute="bottom" id="eTi-cZ-7B7"/>
+                            <constraint firstItem="snj-a8-lze" firstAttribute="leading" secondItem="oVY-Sf-Qhk" secondAttribute="leadingMargin" id="iMs-gN-Lv9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="snj-a8-lze" secondAttribute="trailing" id="sNU-7k-7ay"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Receipt" id="mIN-tO-nQM">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="f6T-hh-wVX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="PpK-Ae-BDL"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REg-sJ-LNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1909" y="138"/>
+            <point key="canvasLocation" x="2847.1999999999998" y="137.18140929535232"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uCS-Uw-19C">
@@ -69,6 +109,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDo-a3-US7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="392.80000000000001" y="790.25487256371821"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qfH-Lh-hxL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uZ9-2L-9QI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FGt-pU-PTw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nYS-2u-pAi" kind="relationship" relationship="rootViewController" id="JpU-su-Cai"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQl-Te-NIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
