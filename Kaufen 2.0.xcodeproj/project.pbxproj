@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE61456C1E4FE4290006CDD7 /* dataFromClarifai.m in Sources */ = {isa = PBXBuildFile; fileRef = AE61456B1E4FE4290006CDD7 /* dataFromClarifai.m */; };
 		AE833C571E4FDFE300E201F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE833C561E4FDFE300E201F8 /* AppDelegate.swift */; };
 		AE833C591E4FDFE300E201F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE833C581E4FDFE300E201F8 /* ViewController.swift */; };
 		AE833C5C1E4FDFE300E201F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE833C5A1E4FDFE300E201F8 /* Main.storyboard */; };
@@ -20,9 +19,6 @@
 /* Begin PBXFileReference section */
 		6D87FD6C4A4C472F6BCEBF2C /* Pods_Kaufen_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kaufen_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F6D9FC8FDE1AF25CA001612 /* Pods-Kaufen 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kaufen 2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kaufen 2.0/Pods-Kaufen 2.0.release.xcconfig"; sourceTree = "<group>"; };
-		AE6145691E4FE4290006CDD7 /* Kaufen 2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kaufen 2.0-Bridging-Header.h"; sourceTree = "<group>"; };
-		AE61456A1E4FE4290006CDD7 /* dataFromClarifai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataFromClarifai.h; sourceTree = "<group>"; };
-		AE61456B1E4FE4290006CDD7 /* dataFromClarifai.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataFromClarifai.m; sourceTree = "<group>"; };
 		AE833C531E4FDFE300E201F8 /* Kaufen 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kaufen 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE833C561E4FDFE300E201F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE833C581E4FDFE300E201F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,9 +79,6 @@
 				AE833C621E4FDFE300E201F8 /* LaunchScreen.storyboard */,
 				AE833C651E4FDFE300E201F8 /* Info.plist */,
 				AE833C5D1E4FDFE300E201F8 /* Kaufen_2_0.xcdatamodeld */,
-				AE61456A1E4FE4290006CDD7 /* dataFromClarifai.h */,
-				AE61456B1E4FE4290006CDD7 /* dataFromClarifai.m */,
-				AE6145691E4FE4290006CDD7 /* Kaufen 2.0-Bridging-Header.h */,
 			);
 			path = "Kaufen 2.0";
 			sourceTree = "<group>";
@@ -225,7 +218,6 @@
 			files = (
 				AE833C5F1E4FDFE300E201F8 /* Kaufen_2_0.xcdatamodeld in Sources */,
 				AE833C591E4FDFE300E201F8 /* ViewController.swift in Sources */,
-				AE61456C1E4FE4290006CDD7 /* dataFromClarifai.m in Sources */,
 				AE833C571E4FDFE300E201F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +346,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Deeptanshu.Kaufen-2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Kaufen 2.0/Kaufen 2.0-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -371,7 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Deeptanshu.Kaufen-2-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Kaufen 2.0/Kaufen 2.0-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
