@@ -14,6 +14,7 @@
 		AE833C5F1E4FDFE300E201F8 /* Kaufen_2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE833C5D1E4FDFE300E201F8 /* Kaufen_2_0.xcdatamodeld */; };
 		AE833C611E4FDFE300E201F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE833C601E4FDFE300E201F8 /* Assets.xcassets */; };
 		AE833C641E4FDFE300E201F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE833C621E4FDFE300E201F8 /* LaunchScreen.storyboard */; };
+		AEE509531E58D30D000A57A9 /* receiptImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE509521E58D30D000A57A9 /* receiptImageViewController.swift */; };
 		FE365092BC10FF3B8B428141 /* Pods_Kaufen_2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D87FD6C4A4C472F6BCEBF2C /* Pods_Kaufen_2_0.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		AE833C601E4FDFE300E201F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE833C631E4FDFE300E201F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE833C651E4FDFE300E201F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEE509521E58D30D000A57A9 /* receiptImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = receiptImageViewController.swift; sourceTree = "<group>"; };
 		DC4935CB74965458FE21A00B /* Pods-Kaufen 2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kaufen 2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kaufen 2.0/Pods-Kaufen 2.0.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				AE833C561E4FDFE300E201F8 /* AppDelegate.swift */,
 				AE833C581E4FDFE300E201F8 /* ViewController.swift */,
 				AE2437B31E51442E00BE1577 /* getDataFromReceipt.swift */,
+				AEE509521E58D30D000A57A9 /* receiptImageViewController.swift */,
 				AE833C5A1E4FDFE300E201F8 /* Main.storyboard */,
 				AE833C601E4FDFE300E201F8 /* Assets.xcassets */,
 				AE833C621E4FDFE300E201F8 /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 			files = (
 				AE833C5F1E4FDFE300E201F8 /* Kaufen_2_0.xcdatamodeld in Sources */,
 				AE2437B41E51442E00BE1577 /* getDataFromReceipt.swift in Sources */,
+				AEE509531E58D30D000A57A9 /* receiptImageViewController.swift in Sources */,
 				AE833C591E4FDFE300E201F8 /* ViewController.swift in Sources */,
 				AE833C571E4FDFE300E201F8 /* AppDelegate.swift in Sources */,
 			);
