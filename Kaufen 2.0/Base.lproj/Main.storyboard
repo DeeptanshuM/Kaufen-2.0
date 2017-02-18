@@ -50,7 +50,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="snj-a8-lze">
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="maI-Ak-asn" userLabel="Image View to store receipt's image">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="maI-Ak-asn" userLabel="receiptImage">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="565"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="FiW-CR-CAs" userLabel="Buttons">
@@ -59,10 +59,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-pW-7gu">
                                                 <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
                                                 <state key="normal" title="Access Photo Library"/>
+                                                <connections>
+                                                    <action selector="usePhotoLibrary:" destination="nYS-2u-pAi" eventType="touchUpInside" id="uxX-uf-ptE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZf-jp-7Vb">
                                                 <rect key="frame" x="176" y="0.0" width="167" height="30"/>
                                                 <state key="normal" title="Use Camera"/>
+                                                <connections>
+                                                    <action selector="useCamera:" destination="nYS-2u-pAi" eventType="touchUpInside" id="bZr-G3-kSn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -87,6 +93,9 @@
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="f6T-hh-wVX"/>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="PpK-Ae-BDL"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="receiptImageView" destination="maI-Ak-asn" id="T5a-cu-j1n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REg-sJ-LNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
