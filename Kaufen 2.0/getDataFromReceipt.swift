@@ -12,11 +12,13 @@ import Clarifai
 class getDataFromReceipt: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   
   @IBOutlet weak var receiptImageView: UIImageView!
+  @IBOutlet var saveButton: UIBarButtonItem!
+
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
+    receiptImageView.image = nil
+    saveButton.isEnabled = false
   }
   
   override func didReceiveMemoryWarning() {
@@ -39,7 +41,8 @@ class getDataFromReceipt: UIViewController, UIImagePickerControllerDelegate, UIN
     
     // Set photoImageView to display the selected image.
     receiptImageView.image = selectedImage
-    
+    saveButton.isEnabled = true
+
     // Dismiss the picker.
     dismiss(animated: true, completion: nil)
   }

@@ -26,7 +26,7 @@
                     <navigationItem key="navigationItem" title="Purchase history" id="TSB-GF-0l7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pax-WO-aaM">
                             <connections>
-                                <segue destination="uZ9-2L-9QI" kind="presentation" identifier="AddData" id="X3G-xu-q1W"/>
+                                <segue destination="uZ9-2L-9QI" kind="show" identifier="AddData" id="X3G-xu-q1W"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -50,21 +50,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="snj-a8-lze">
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="maI-Ak-asn" userLabel="receiptImage">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="565"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="maI-Ak-asn" userLabel="receiptImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="541"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="FiW-CR-CAs" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="573" width="343" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="FiW-CR-CAs" userLabel="Buttons">
+                                        <rect key="frame" x="0.0" y="549" width="343" height="54"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjk-pW-7gu">
-                                                <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
+                                                <rect key="frame" x="0.0" y="12" width="167" height="30"/>
                                                 <state key="normal" title="Access Photo Library"/>
                                                 <connections>
                                                     <action selector="usePhotoLibrary:" destination="nYS-2u-pAi" eventType="touchUpInside" id="uxX-uf-ptE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZf-jp-7Vb">
-                                                <rect key="frame" x="176" y="0.0" width="167" height="30"/>
+                                                <rect key="frame" x="176" y="12" width="167" height="30"/>
                                                 <state key="normal" title="Use Camera"/>
                                                 <connections>
                                                     <action selector="useCamera:" destination="nYS-2u-pAi" eventType="touchUpInside" id="bZr-G3-kSn"/>
@@ -95,6 +95,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="receiptImageView" destination="maI-Ak-asn" id="T5a-cu-j1n"/>
+                        <outlet property="saveButton" destination="PpK-Ae-BDL" id="0hg-cU-Bav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REg-sJ-LNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
